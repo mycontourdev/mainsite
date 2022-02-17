@@ -14,9 +14,12 @@
     if ((is_chrome) && (is_safari)) {is_safari = false;}  
     if (is_safari) {
         console.log("Safari");
+        var elem = document.getElementById("header");
+        elem.style.display = "none";
+        elem.style.visibility = "hidden";
     }
     else {
-        console.log("Chrome");
+        //console.log("Chrome");
     }
   /*
   var is_safari = navigator.userAgent.indexOf("Safari") > -1;
