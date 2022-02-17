@@ -10,14 +10,14 @@
     var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
     var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-    console.log(is_safari+" - "+is_chrome);
+    //console.log(is_safari+" - "+is_chrome);
     if ((is_chrome) && (is_safari)) {is_safari = false;}  
     if (is_safari) {
         console.log("Safari");
         var elem = document.getElementById("header");
       //elem.setAttribute("display","block");
       //elem.setAttribute("visibility","visible");
-     elem.hidden = false;
+     elem.hidden = true;
       
     }
     else {
