@@ -6,73 +6,42 @@
     <title>The Prepare Institute</title>
     <style>.iframe-container{overflow:hidden}.iframe-container iframe{border:0;height:100%;left:0;position:absolute;top:0;width:100%}</style> 
     <style>
-      .head-wrap {
-    position: -webkit-sticky;
-    position: sticky;
-    top: -20px;
-    margin: 0;
-        display: none;
+     .announcement {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: Arial, sans;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 0.8em;
 }
-.announcement {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
-    background: #336B9F;
-    text-align: center;
-    color: #fff;
+
+.announcement a { 
+  color: #ccc; 
 }
-.announcement a {
-    font-size: 16px;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
+
+.announcement a:hover {
+  color: red;
 }
-      @media screen and (max-width:425px) {
-    .head-wrap {
-        top: -60px /* line-height .announcement x -2 */
-    }
-}
-          .container{
-    position: sticky;
-         top: -20px;
-    margin: 0;
-        height: 50px;
-    }
-    .box{
-        height: 100%;            
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.8;  /* for demo purpose  */
-    }
-    .stack-top{
-        z-index: 9;
-        margin: 20px; /* for demo purpose  */
-    }
     </style>
     
   </head> 
   <body> 
     
-       <div class="container">
-        <div class="box" style="background: red;"></div>
-        <div class="box stack-top" style="background: blue;"></div>
-    </div>
+    <div class="announcement">
+    <p>Announcement Here!&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="">Full Story ></a></p>
+  </div>
     
     <script>
    // let script = document.createElement('script');
 //script.src = 'https://go.advisorlaunch.com/version-test/index/1630939351705x199054128857547360';
 //document.body.append(script);
     </script>
-    <div id='header' class='head-wrap'>
-    <div class='announcement'>
-        <a href='#' title='announcement'>Currently, we only support Chrome & Mozilla Firefox Browser.</a>
-    </div>
-    <header>
-     
-    </header>
+   
        <script>
     var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
