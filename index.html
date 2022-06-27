@@ -4,9 +4,32 @@
     <link rel="icon" href="null">
     <title>Development - The Prepare Institute</title>
     <style>.iframe-container{overflow:hidden}.iframe-container iframe{border:0;height:100%;left:0;position:absolute;top:0;width:100%}</style>
-    
+        <script>
+		function fnBrowserDetect(){
+                 
+         let userAgent = navigator.userAgent;
+         let browserName;
+         
+         if(userAgent.match(/chrome|chromium|crios/i)){
+             browserName = "chrome";
+           }else if(userAgent.match(/firefox|fxios/i)){
+             browserName = "firefox";
+           }  else if(userAgent.match(/safari/i)){
+             browserName = "safari";
+           }else if(userAgent.match(/opr\//i)){
+             browserName = "opera";
+           } else if(userAgent.match(/edg/i)){
+             browserName = "edge";
+           }else{
+             browserName="No browser detection";
+           }
+         console.log("Test : "+browserName);
+          //document.querySelector("h1").innerText="You are using "+ browserName +" browser";
+         
+		 }
+	</script>
 </head> 
-<body> 
+<body onload="fnBrowserDetect()"> 
     <div class="iframe-container"> <iframe id="myIframe"></iframe>
     </div>
     <script>
