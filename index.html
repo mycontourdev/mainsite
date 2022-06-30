@@ -75,7 +75,7 @@ displayCookies();
         
         var mypath = window.location.pathname;
         var myframe = document.getElementById("myIframe");
-	    console.log(mypath+" --- "+window.location)
+	    console.log(mypath+" --- "+window.location.search)
         myframe.src = "https://go.advisorlaunch.com/version-test/index/1630939351705x199054128857547360"+mypath.substring(1);
         
         //console.log("Dev "+myframe.src);
