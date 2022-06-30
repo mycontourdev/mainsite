@@ -53,6 +53,7 @@
             	var displayCookies = document.getElementById("display");
             	//displayCookies.innerHTML = document.cookie;
                 var cookies = document.cookie.split(";");
+		console.log("document: "+document.cookie);  
                 for (var i = 0; i < cookies.length; i++) {
                      var cookie = cookies[i];
                      console.log("Cookies Name "+cookie);
