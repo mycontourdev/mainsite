@@ -45,6 +45,20 @@
          // document.querySelector("h1").innerText="You are using "+ browserName +" browser";
          
 		 }
+		
+		const isCookieEnabled = navigator.cookieEnabled;
+        console.log(isCookieEnabled); // true
+          function displayCookies() {
+            
+            	var displayCookies = document.getElementById("display");
+            	//displayCookies.innerHTML = document.cookie;
+                var cookies = document.cookie.split(";");
+                for (var i = 0; i < cookies.length; i++) {
+                     var cookie = cookies[i];
+                     console.log(cookie);
+                }
+            }
+
 	</script>
 </head> 
 <body onload="fnBrowserDetect()"> 
